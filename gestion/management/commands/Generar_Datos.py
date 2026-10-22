@@ -22,7 +22,7 @@ class Command(BaseCommand):
             'Tos persistente', 
             'Chequeo general preventivo'
         ]
-        estados = ['pendiente', 'atendido', 'cancelado']
+        estados = ['pendiente', 'atendida', 'cancelada']
 
         # Limpiar datos anteriores (opcional)
         Cita.objects.all().delete()

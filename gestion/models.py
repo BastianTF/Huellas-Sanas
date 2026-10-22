@@ -13,8 +13,8 @@ class Mascota(models.Model):
 class Cita(models.Model):
     ESTADOS = [
         ('pendiente', 'Pendiente'),
-        ('atendido', 'Atendido'),
-        ('cancelado', 'Cancelado'),
+        ('atendida', 'Atendida'),
+        ('cancelada', 'Cancelada'),
     ]
 
     mascota = models.ForeignKey(Mascota, on_delete=models.CASCADE)
